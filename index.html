@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐷</text></svg>" />
+  <link rel="apple-touch-icon" href="icon.svg" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <title>旋旋的工作台</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <!-- 左侧纵向导航 -->
+    <aside class="sidebar">
+      <div class="brand">
+        <span class="brand-emoji">🐷</span>
+        <span class="brand-text">旋旋的<br>工作台</span>
+      </div>
+      <nav class="nav">
+        <button class="nav-item active" data-page="plans">
+          <span class="nav-ico">📋</span>
+          <span class="nav-label">每日计划</span>
+        </button>
+        <button class="nav-item" data-page="poop">
+          <span class="nav-ico">💩</span>
+          <span class="nav-label">每日噗噗</span>
+        </button>
+        <button class="nav-item" data-page="love">
+          <span class="nav-ico">💕</span>
+          <span class="nav-label">恋爱手记</span>
+        </button>
+        <button class="nav-item" data-page="countdown">
+          <span class="nav-ico">⏳</span>
+          <span class="nav-label">倒数日</span>
+        </button>
+      </nav>
+      <div class="side-foot">v1.0</div>
+    </aside>
+
+    <!-- 主内容区 -->
+    <main class="content">
+      <section id="page-plans" class="page active"></section>
+      <section id="page-poop" class="page"></section>
+      <section id="page-love" class="page"></section>
+      <section id="page-countdown" class="page"></section>
+    </main>
+  </div>
+
+  <button id="backup-fab" class="backup-fab" title="数据备份">💾</button>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
